@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import TopContainer from "./navigation/topContainer";
+import { configureStore } from "@reduxjs/toolkit";
+import todoSlice from "./features/todoSlice";
+import { Provider } from "react-redux";
+
+const store = configureStore({
+  reducer: {
+    todo: todoSlice
+  }
+})
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <Provider store={store}>
+        <TopContainer />
+      </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

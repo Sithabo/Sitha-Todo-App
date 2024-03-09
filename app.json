@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "expo-tutorial-app",
-    "slug": "expo-tutorial-app",
+    "name": "Sitha Todo",
+    "slug": "sitha-todo-app",
+    "description": "Scribble all your todos and worries away with the awesome Sitha Todo app!😁",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Sitha-Todo-Icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/todo-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +20,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Sitha-Todo-Icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sithabo.sithatodoapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Sitha-Todo-Icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "95e767f1-0f39-414a-94db-b6ec5d51ce17"
+      }
     }
   }
 }
